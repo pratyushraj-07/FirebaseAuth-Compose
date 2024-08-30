@@ -37,6 +37,7 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.text.input.VisualTransformation
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
@@ -76,48 +77,15 @@ fun SignupScreen(
                 )
             )
     ) {
-        Column(
-            modifier = Modifier
-                .padding(top = 48.dp)
-                .fillMaxWidth(),
-            horizontalAlignment = Alignment.CenterHorizontally
-        ) {
-            Text(
-                text = "Welcome",
-                fontSize = 42.sp,
-                fontWeight = FontWeight.Bold,
-                color = Color.Black,
-                style = TextStyle(shadow = Shadow(offset = Offset(3f, 3f)))
-            )
-
-            Text(
-                text = "To",
-                fontSize = 30.sp,
-                color = Color.Black,
-                style = TextStyle(shadow = Shadow(offset = Offset(2f, 2f)))
-            )
-
-            Text(
-                text = "MessageHub",
-                fontSize = 30.sp,
-                fontWeight = FontWeight.Bold,
-                color = Color.Transparent,
-                modifier = Modifier
-                    .padding(top = 7.dp)
-                    .background(
-                        brush = Brush.horizontalGradient(
-                            listOf(SunsetOrange, Indigo)
-                        ),
-                        shape = RoundedCornerShape(28.dp)
-                    )
-                    .padding(12.dp),
-                style = TextStyle(
-                    shadow = Shadow(
-                        color = Color.White
-                    )
-                )
-            )
-        }
+        Text(
+            modifier = Modifier.fillMaxWidth().padding(top = 80.dp),
+            textAlign = TextAlign.Center,
+            text = "Welcome",
+            fontSize = 42.sp,
+            fontWeight = FontWeight.Bold,
+            color = Color.Black,
+            style = TextStyle(shadow = Shadow(offset = Offset(3f, 3f)))
+        )
 
         Spacer(modifier = Modifier.height(20.dp))
 

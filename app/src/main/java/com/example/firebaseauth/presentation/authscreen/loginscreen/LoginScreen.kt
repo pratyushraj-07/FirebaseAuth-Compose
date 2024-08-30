@@ -78,7 +78,7 @@ fun LoginScreen(
         Column(
             modifier = Modifier
                 .fillMaxWidth()
-                .padding(top = 48.dp),
+                .padding(top = 70.dp),
             horizontalAlignment = Alignment.CenterHorizontally,
         ) {
             Text(
@@ -94,27 +94,6 @@ fun LoginScreen(
                 fontSize = 35.sp,
                 color = Color.Black,
                 style = TextStyle(shadow = Shadow(offset = Offset(2f, 2f)))
-            )
-
-            Text(
-                text = "MessageHub",
-                fontSize = 30.sp,
-                fontWeight = FontWeight.Bold,
-                color = Color.Transparent,
-                modifier = Modifier
-                    .padding(top = 7.dp)
-                    .background(
-                        brush = Brush.horizontalGradient(
-                            listOf(SunsetOrange, Indigo)
-                        ),
-                        shape = RoundedCornerShape(28.dp)
-                    )
-                    .padding(12.dp),
-                style = TextStyle(
-                    shadow = Shadow(
-                        color = Color.White
-                    )
-                )
             )
         }
 
