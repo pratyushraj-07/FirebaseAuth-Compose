@@ -3,7 +3,7 @@
 ## Overview
 
 This repository is a practice project aimed at demonstrating the integration of Firebase Authentication and Dagger Hilt for dependency injection in an Android application.
-Built kotlin and jetpack compose following the clean architecture pattern
+Built with kotlin and jetpack compose following the clean architecture pattern
 
 ## Tech Stack
 - Jetpack compsoe
